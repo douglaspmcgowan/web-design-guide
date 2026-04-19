@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>The web looks the way someone chose · A field guide to web design</title>
+<meta name="description" content="Why designed sites look considered and vibe-coded sites don't — the fourteen vocabularies, thirty traditions, and where to find examples worth studying.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="masthead">
+  <div class="page">
+    <div class="eyebrow">A field guide &nbsp;·&nbsp; April 2026</div>
+    <h1 class="hed">The web looks the way someone chose.</h1>
+    <p class="lede">Most sites don't look designed. What follows is a map of why — the specific tells of pages generated without intention, the fourteen vocabularies a designer is actually working in, and thirty living traditions worth studying.</p>
+    <div class="meta">
+      <span>Ways of Thinking series</span>
+      <span class="dot">·</span>
+      <span>Paper set in Source Serif 4</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Contents">
+  <div class="page">
+    <div class="toc-label">Contents</div>
+    <ol class="toc-list">
+      <li><a href="#thesis"><span class="toc-num">i</span><span class="toc-text">The thesis</span></a></li>
+      <li><a href="#signature"><span class="toc-num">ii</span><span class="toc-text">The vibe-coded signature</span></a></li>
+      <li><a href="#habits"><span class="toc-num">iii</span><span class="toc-text">What designers actually do</span></a></li>
+      <li><a href="#vocabularies"><span class="toc-num">iv</span><span class="toc-text">The fourteen vocabularies</span></a></li>
+      <li><a href="#traditions"><span class="toc-num">v</span><span class="toc-text">Thirty traditions</span></a></li>
+      <li><a href="#mixing"><span class="toc-num">vi</span><span class="toc-text">How traditions combine</span></a></li>
+      <li><a href="#exemplars"><span class="toc-num">vii</span><span class="toc-text">Exemplars for information and communication</span></a></li>
+      <li><a href="#map"><span class="toc-num">viii</span><span class="toc-text">Sites that map UI design itself</span></a></li>
+      <li><a href="#galleries"><span class="toc-num">ix</span><span class="toc-text">Sites that show examples</span></a></li>
+      <li><a href="#practitioners"><span class="toc-num">x</span><span class="toc-text">Practitioners worth following</span></a></li>
+      <li><a href="#close"><span class="toc-num">xi</span><span class="toc-text">One-paragraph synthesis</span></a></li>
+    </ol>
+  </div>
+</nav>
+
+<main class="essay">
+
+  <section id="thesis" class="bay">
+    <div class="page">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;i</span>
+        <span class="section-title">The thesis</span>
+      </div>
+      <p class="opening"><span class="dropcap">T</span>he claim underneath everything is simple. Designed sites are the sum of a hundred small, intentional decisions. Vibe-coded sites are the sum of zero decisions and a hundred defaults. When a page feels <em>generated</em> — when it has that particular flatness — the reason is almost always that every value came from a library's default rather than being chosen against an alternative the designer considered and rejected. The difference is not budget or talent. It is attention per pixel.</p>
+      <p>What follows is a field guide in five parts: a taxonomy of the tells (why a page reads as vibe-coded), an inventory of what designers do instead, the fourteen independent vocabularies every design decision lives inside, thirty traditions worth knowing, and a small atlas of where to find sites to study. Two questions worth asking of any site you come across are, <em>on which axes is this pushing, on which is it quiet, and do those choices reinforce or contradict each other?</em> That question — more than taste — is how designers diagnose craft.</p>
+    </div>
+  </section>
+
+  <section id="signature" class="bay">
+    <div class="page">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;ii</span>
+        <span class="section-title">The vibe-coded signature</span>
+      </div>
+      <p>A page made of defaults tends to produce the same page. If three or more of the following appear together, the site was generated rather than composed.</p>
+      <ol class="num-list">
+        <li><strong>Aurora-gradient hero with a glowing blob.</strong> Purple-to-pink mesh, radial blur, centered headline, two calls-to-action stacked or side by side.</li>
+        <li><strong>Uniform section padding.</strong> Every section is <code>py-24</code>. No rhythm — no tight clusters separated by generous breathing.</li>
+        <li><strong><code>rounded-2xl</code> on everything.</strong> Buttons, inputs, cards, images, avatars — all sixteen pixels of radius, regardless of size.</li>
+        <li><strong>The default shadcn shadow.</strong> A single gray blur, unmodified, on every floating element.</li>
+        <li><strong>Slate or zinc grays.</strong> Cool neutrals with a blue undertone; never a warm alternative like stone or a cream off-white.</li>
+        <li><strong>Inter at one weight, one tracking, every size.</strong> No optical sizing, no weight contrast, no stylistic alternates.</li>
+        <li><strong>Emoji in headlines.</strong> A rocket, sparkles, lightning bolt, or checkmark doing the emotional work the copy refuses to do.</li>
+        <li><strong>Mixed icon sets.</strong> Lucide in the navbar, Heroicons in the features, Font Awesome smuggled into the footer.</li>
+        <li><strong>Three feature cards in perfect 3-column symmetry.</strong> Each with an icon, a three-word headline, and a two-line description.</li>
+        <li><strong>Centered everything.</strong> No asymmetry. Nothing ever breaks the axis.</li>
+        <li><strong>Gradient text on the main headline.</strong> <code>bg-clip-text</code> from purple to blue.</li>
+        <li><strong>The "Trusted by" logo row.</strong> Five faded grayscale logos from companies you have never heard of.</li>
+        <li><strong>Pure flat surfaces.</strong> No grain, no texture, no noise, no layered shadow. Nothing to catch the eye.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="habits" class="bay">
+    <div class="page">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;iii</span>
+        <span class="section-title">What designers actually do</span>
+      </div>
+      <p>The opposite habits — the ones that compound into sites that feel considered — are mostly about typography, colour temperature, and small layered details that together produce the impression of intent.</p>
+
+      <h3>Typography carries most of the felt difference</h3>
+      <p>Set the measure. Matthew Butterick's rule puts body lines between forty-five and ninety characters, around sixty-six as the sweet spot. <code>max-width: 65ch</code> on your prose column solves this in one line. Use <code>text-wrap: balance</code> on headlines so multi-line titles wrap into even visual blocks, and <code>text-wrap: pretty</code> on paragraphs to prevent orphaned single-word last lines. Turn on <code>font-optical-sizing: auto</code> so variable fonts adjust shape across sizes — thinner and more refined at display, sturdier at captions. Reach for <code>font-feature-settings</code>: tabular numerals in data tables, old-style figures in prose, stylistic alternates where a face offers them. Mix weights inside a single line ("The <strong>craft</strong> of typography") for hierarchy without changing size or colour. One carefully licensed typeface from Klim, Commercial Type, Pangram Pangram, or Dinamo immediately separates a site from the free-Google-font substrate.</p>
+
+      <h3>Warm neutrals, not cool grays</h3>
+      <p>Pure white and pure black are amateur tells. A background at <code>#FBF8F1</code> (paper) with text at <code>#1C1712</code> (warm near-black) reads as editorial; <code>#FAFAFA</code> on <code>#0F172A</code> reads as a template. The dark mode of a serif-led page needs warm darks too — try <code>#1A1814</code> and <code>#E8DFD0</code>, not an inverted slate palette. Keep a single saturated accent, used on less than five per cent of the page, and let everything else be neutral. Non-neutral neutrals — off-whites with a yellow or pink cast, near-blacks with a blue tilt — are among the most under-rated gestures in contemporary design.</p>
+
+      <h3>Shadows with shape and hue</h3>
+      <p>Real objects cast soft, layered shadows. Stack three to five shadows with increasing blur, increasing offset, and decreasing opacity; commit to a single light source; and tint the shadow toward the hue of the surface it falls on. Josh Comeau's <a href="https://www.joshwcomeau.com/css/designing-shadows/">Designing Beautiful Shadows in CSS</a> is the canonical writeup, and his <a href="https://www.joshwcomeau.com/css/introducing-shadow-palette-generator/">Shadow Palette Generator</a> does it for you. A single unmodified Tailwind <code>shadow-md</code> is the plainest tell that nobody touched the detail.</p>
+
+      <h3>Hairlines, nested radii, asymmetric hover</h3>
+      <p>Borders at <code>1px solid rgba(0,0,0,0.08)</code> read as hairlines; <code>1px solid #E5E5E5</code> reads as boxes. If a card has sixteen pixels of border-radius and eight pixels of padding, the inner element should have eight pixels of radius — nested radii, in the iOS manner. Pick one icon set, at one weight, matching the weight of your type. Give hovers asymmetric timing (120&nbsp;ms in, 240&nbsp;ms out feels more alive than symmetric). And add two to four per cent of grain on every flat colour region — a CSS <code>feTurbulence</code> filter, no image — which dramatically kills the plasticky flatness of modern CSS.</p>
+
+      <h3>Real copy</h3>
+      <p>Content is design. No lorem ipsum. No stock photography. Specificity over superlative. "We make websites" out-designs "Crafting digital experiences that delight users." Read the copy aloud; if it sounds like a deck, it reads like one. Microcopy — button text, empty states, error messages, alt text — is where voice lives most densely. "Email" beats "E-mail Address." "Password must contain at least eight characters" beats "Invalid password." Ten minutes tuning a hero headline will outrun any amount of visual polish.</p>
+    </div>
+  </section>
+
+  <section id="vocabularies" class="bay">
+    <div class="page">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;iv</span>
+        <span class="section-title">The fourteen vocabularies</span>
+      </div>
+      <p>Every design decision lives on a specific axis. Designers don't make <em>a design</em> — they make thousands of decisions, across roughly fourteen independent vocabularies. Learning these as separable is how you move from intuition to craft.</p>
+
+      <ol class="vocab">
+        <li>
+          <div class="vocab-head"><span class="vocab-num">01</span><span class="vocab-name">Typography</span></div>
+          <p>Face, weight, optical size, scale ratio (1.125, 1.2, 1.25, 1.333, 1.414, 1.5, 1.618), measure (45&ndash;75ch), line-height (1.4&ndash;1.6 for body, 1.05&ndash;1.2 for display), tracking, pairing. Variable fonts unlock <code>opsz</code>, <code>GRAD</code>, and italic axes without new files.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">02</span><span class="vocab-name">Colour</span></div>
+          <p>Palette primitives (neutrals, accent, semantic), contrast thresholds (WCAG AA = 4.5:1 body), perceptual spaces (<code>oklch()</code> beats <code>hsl()</code> for generating even ramps), temperature, chroma modulation, and dark mode as a <em>separate</em> palette, not an inversion.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">03</span><span class="vocab-name">Space</span></div>
+          <p>A four- or eight-point quantization grid as the substrate. Margin is outside space (relationship between elements); padding is inside space (component breathing). Section rhythm — tight clusters separated by generous emptiness — creates the music of a long page.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">04</span><span class="vocab-name">Layout &amp; grid</span></div>
+          <p>Twelve-column Swiss, bento modules, broken editorial, full-bleed as punctuation, z-axis layering. Maximum-width philosophy is its own decision: 1280, 1440, 1920, or full viewport each signal differently.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">05</span><span class="vocab-name">Hierarchy</span></div>
+          <p>Size, weight, colour, position, contrast, whitespace, and motion orchestrated together. The F-pattern applies to text-heavy pages; the Z-pattern to sparse ones; central fixation to single-column mobile. Motion hierarchy — which element animates first, which longer, which with more spring — is the newest dimension.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">06</span><span class="vocab-name">Imagery</span></div>
+          <p>Photography style (editorial, commercial, experimental), illustration mode (flat, isometric, hand-drawn, 3D, generative), crop and aspect ratio (16:9 cinematic, 4:5 editorial, 1:1 social, 3:2 photojournalistic), and the distinction between image-as-content and image-as-decoration.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">07</span><span class="vocab-name">Motion</span></div>
+          <p>150&ndash;250&nbsp;ms for micro-interactions, 300&ndash;500&nbsp;ms for transitions. <code>cubic-bezier(0.32, 0.72, 0, 1)</code> is the Vercel-adjacent signature curve. Spring physics, FLIP, stagger, and the View Transitions API replace fixed-duration animation. Always honour <code>prefers-reduced-motion</code>.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">08</span><span class="vocab-name">Interaction</span></div>
+          <p>Hover affordances, <code>:focus-visible</code> rings (2&nbsp;px offset, accent colour, keyboard-only), active states with a 1&nbsp;px <code>translateY</code>, and a forty-four-point minimum tap target (WCAG 2.5.5).</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">09</span><span class="vocab-name">Voice &amp; content</span></div>
+          <p>Microcopy, error messages, empty states, alt text. Stripe is precise and confident. Mailchimp is warm and whimsical. Linear is terse and technical. Apple is declarative and reverent. Sentence length matters: short reads confidently, long reads thoughtfully, alternating reads naturally.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">10</span><span class="vocab-name">Form &amp; ornament</span></div>
+          <p>Hairlines, pills, chips, noise textures, dot patterns. Ornament must earn its place by conveying tone or information. Decoration without either is noise.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">11</span><span class="vocab-name">Structure</span></div>
+          <p>Navigation patterns (top bar, drawer, hamburger, <kbd>⌘</kbd>&thinsp;K command palette), table-of-contents with scroll-spy, sticky headers, footer as canvas, page archetypes (home, landing, product, pricing, docs, blog index, post, 404).</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">12</span><span class="vocab-name">Performance-as-aesthetic</span></div>
+          <p>Core Web Vitals: LCP under 2.5&nbsp;s, CLS under 0.1, INP under 200&nbsp;ms. Font-loading strategy is a design decision. Sixty-frames-per-second during scroll is not a technical requirement but a felt one. A beautifully designed site that loads slowly feels cheap.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">13</span><span class="vocab-name">Accessibility-as-design</span></div>
+          <p>Semantic HTML, keyboard navigation, visible focus, contrast, reduced motion, target size. The frame shift: designing for accessibility improves the product for everyone. Captions help in noisy rooms, high contrast helps in sunlight, large tap targets help on trains.</p>
+        </li>
+        <li>
+          <div class="vocab-head"><span class="vocab-num">14</span><span class="vocab-name">Tooling &amp; craft</span></div>
+          <p>Design tokens, Tailwind v4, CSS custom properties, Radix primitives, cascade layers, container queries. The compiler of taste is now a browser at real viewports, with real content, iterating in minutes rather than in static comps.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="traditions" class="bay wider">
+    <div class="page page-wide">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;v</span>
+        <span class="section-title">Thirty traditions</span>
+      </div>
+      <p class="intro">Web design is not one tradition. It is a stack of art-historical threads braided into a browser. Every site worth admiring is an argument about what the web should feel like — a magazine, a terminal, a museum, a grid, a garden. Thirty of the live traditions, as of April 2026, with representative sites.</p>
+
+      <h3 class="group">Classical &amp; structural</h3>
+      <div class="tradition-grid">
+        <article class="tradition">
+          <h4>01 &middot; Swiss &#47; International Style</h4>
+          <p>Grid-based, sans-serif, no ornament. Helvetica or Akzidenz-Grotesk riding a strict column system; white space doing structural work.</p>
+          <p class="exemplars"><a href="https://www.grillitype.com">Grilli Type</a>, <a href="https://lineto.com">Lineto</a>, <a href="https://basedesign.com">Base Design</a></p>
+        </article>
+        <article class="tradition">
+          <h4>02 &middot; Bauhaus revival</h4>
+          <p>Primary colours, pure geometric shapes, grid-first, geometric sans. Circle, triangle, square as a starter kit.</p>
+          <p class="exemplars"><a href="https://www.vitra.com">Vitra</a>, <a href="https://hermanmiller.com">Herman Miller</a></p>
+        </article>
+        <article class="tradition">
+          <h4>03 &middot; Swiss revival</h4>
+          <p>Swiss, but 2024 — type specimens as motion graphics, grids revealed as interactive objects, variable fonts pushed to display scale.</p>
+          <p class="exemplars"><a href="https://klim.co.nz">Klim Type</a>, <a href="https://pangrampangram.com">Pangram Pangram</a>, <a href="https://abcdinamo.com">Dinamo</a></p>
+        </article>
+      </div>
+
+      <h3 class="group">Reading &amp; editorial</h3>
+      <div class="tradition-grid">
+        <article class="tradition">
+          <h4>04 &middot; Editorial &#47; magazine</h4>
+          <p>Serif headlines, measured columns, drop caps, pull quotes, bylines. The web as inheritor of <em>The New Yorker</em> and <em>Harper's</em>.</p>
+          <p class="exemplars"><a href="https://www.newyorker.com">The New Yorker</a>, <a href="https://www.theatlantic.com">The Atlantic</a>, <a href="https://aeon.co">Aeon</a>, <a href="https://harpers.org">Harper's</a></p>
+        </article>
+        <article class="tradition">
+          <h4>05 &middot; Document &#47; reading</h4>
+          <p>The web as book. Single column, serif body, sidenotes, footnotes that actually work. Typography <em>is</em> the interface.</p>
+          <p class="exemplars"><a href="https://gwern.net">Gwern</a>, <a href="https://press.stripe.com">Stripe Press</a>, <a href="https://ciechanow.ski">Ciechanowski</a>, <a href="http://paulgraham.com">Paul Graham</a></p>
+        </article>
+        <article class="tradition">
+          <h4>06 &middot; Delftian &#47; modernist book-on-web</h4>
+          <p>Slow, warm, handmade. Cream backgrounds, well-spaced serifs, considered footers, no hero. The Dutch book-design tradition transposed.</p>
+          <p class="exemplars"><a href="https://craigmod.com">Craig Mod</a>, <a href="https://frankchimero.com">Frank Chimero</a>, <a href="https://www.robinrendle.com">Robin Rendle</a></p>
+        </article>
+        <article class="tradition">
+          <h4>07 &middot; Academic &#47; scientific</h4>
+          <p>The research paper, typeset for the web. ET Book or Computer Modern, numbered figures, KaTeX equations, inline citations, Tufte sidenotes.</p>
+          <p class="exemplars"><a href="https://distill.pub">Distill</a>, <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a>, <a href="https://transformer-circuits.pub">Transformer Circuits</a></p>
+        </article>
+        <article class="tradition">
+          <h4>08 &middot; Wiki &#47; hypertext</h4>
+          <p>Cross-referenced, dense, link-rich. Content as decoration. Backlinks, anchor links, digital gardens.</p>
+          <p class="exemplars"><a href="https://notes.andymatuschak.org">Andy Matuschak</a>, <a href="https://maggieappleton.com/garden">Maggie Appleton</a>, <a href="https://wikipedia.org">Wikipedia</a></p>
+        </article>
+      </div>
+
+      <h3 class="group">Product &amp; contemporary</h3>
+      <div class="tradition-grid">
+        <article class="tradition">
+          <h4>09 &middot; Minimal &#47; Apple-Linear</h4>
+          <p>Whitespace as the only expensive material. A single geometric sans, one accent, imagery that floats; hovers that barely shift.</p>
+          <p class="exemplars"><a href="https://www.apple.com">Apple</a>, <a href="https://linear.app">Linear</a>, <a href="https://arc.net">Arc</a>, <a href="https://notion.so">Notion</a></p>
+        </article>
+        <article class="tradition">
+          <h4>10 &middot; Editorial modern</h4>
+          <p>The 2023&ndash;2026 tech default. Swiss bones plus editorial warmth plus product polish. Geist or Inter Tight; aurora gradients (used with restraint); bento modules.</p>
+          <p class="exemplars"><a href="https://stripe.com">Stripe</a>, <a href="https://vercel.com">Vercel</a>, <a href="https://railway.com">Railway</a>, <a href="https://resend.com">Resend</a></p>
+        </article>
+        <article class="tradition">
+          <h4>11 &middot; "After" &#47; quiet luxury</h4>
+          <p>Post-hype, post-minimal. Warm off-whites, slightly thicker type, one careful animation; a reaction against Linear-era sameness.</p>
+          <p class="exemplars"><a href="https://writer.com">Writer</a>, <a href="https://every.to">Every</a>, <a href="https://cosmos.so">Cosmos</a>, <a href="https://sanctuary.computer">Sanctuary Computer</a></p>
+        </article>
+        <article class="tradition">
+          <h4>12 &middot; Infrastructural &#47; API-docs</h4>
+          <p>Code-first. Two-column dark-light split, syntax highlighting as a visual system, copy-paste affordances everywhere.</p>
+          <p class="exemplars"><a href="https://stripe.com/docs">Stripe Docs</a>, <a href="https://vercel.com/docs">Vercel Docs</a>, <a href="https://linear.app/docs">Linear Docs</a></p>
+        </article>
+        <article class="tradition">
+          <h4>13 &middot; Japanese minimal</h4>
+          <p>Kenya Hara's emptiness, not minimalism. Off-white ground, thin type, one photographed object. <em>Ma</em> as structural material.</p>
+          <p class="exemplars"><a href="https://www.muji.net">Muji</a>, <a href="https://www.nendo.jp">Nendo</a>, <a href="https://www.ndc.co.jp/hara/en/">Kenya Hara</a></p>
+        </article>
+      </div>
+
+      <h3 class="group">Expressive &amp; loud</h3>
+      <div class="tradition-grid">
+        <article class="tradition">
+          <h4>14 &middot; Brutalist web</h4>
+          <p>Default styles, raw HTML, anti-design. Times New Roman, underlined blue links, no grid, provocation through refusal.</p>
+          <p class="exemplars"><a href="https://craigslist.org">Craigslist</a>, <a href="https://news.ycombinator.com">Hacker News</a>, <a href="https://www.berkshirehathaway.com">Berkshire Hathaway</a></p>
+        </article>
+        <article class="tradition">
+          <h4>15 &middot; Neo-brutalist</h4>
+          <p>Brutalism that hired a designer. Hard drop shadows, thick borders, saturated primaries, oversized type.</p>
+          <p class="exemplars"><a href="https://gumroad.com">Gumroad</a>, <a href="https://www.figma.com">Figma</a>, <a href="https://clerk.com">Clerk</a></p>
+        </article>
+        <article class="tradition">
+          <h4>16 &middot; Maximal &#47; cluttercore</h4>
+          <p>Layered, overwhelming, scrapbook-energy. Multiple typefaces at once, stickers, tape, overlapping images. The anti-minimalist rebellion.</p>
+          <p class="exemplars"><a href="https://rauno.me">Rauno Freiberg</a>, <a href="https://are.na">Are.na</a></p>
+        </article>
+        <article class="tradition">
+          <h4>17 &middot; Memphis &#47; postmodern</h4>
+          <p>Squiggles, dots, zig-zags, confetti on pastels. Mustard, salmon, mint, lavender; irregular decorative geometry.</p>
+          <p class="exemplars"><a href="https://mailchimp.com">Mailchimp</a>, <a href="https://www.itsnicethat.com">It's Nice That</a></p>
+        </article>
+        <article class="tradition">
+          <h4>18 &middot; Awwwards &#47; experimental</h4>
+          <p>Technical showmanship. WebGL scenes, custom cursors, scroll-jacking, orchestrated page transitions.</p>
+          <p class="exemplars"><a href="https://bruno-simon.com">Bruno Simon</a>, <a href="https://activetheory.net">Active Theory</a>, <a href="https://locomotive.ca">Locomotive</a></p>
+        </article>
+      </div>
+
+      <h3 class="group">Retro &amp; ironic</h3>
+      <div class="tradition-grid">
+        <article class="tradition">
+          <h4>19 &middot; Y2K &#47; Frutiger Aero</h4>
+          <p>Early-2000s optimism. Chrome gradients, glassy bubbles, pastel skies, lens flares, Myspace-era friendliness.</p>
+          <p class="exemplars"><a href="https://poolsuite.net">Poolsuite</a>, <a href="https://dumbwaystodie.com">Dumb Ways to Die</a></p>
+        </article>
+        <article class="tradition">
+          <h4>20 &middot; Terminal &#47; hacker</h4>
+          <p>Monospace, green-on-black (or amber), CRT scanlines, ASCII diagrams, blinking cursors.</p>
+          <p class="exemplars"><a href="https://terminal.shop">Terminal.shop</a>, <a href="https://solar.lowtechmagazine.com">Low-tech Magazine</a>, <a href="https://motherfuckingwebsite.com">motherfuckingwebsite</a></p>
+        </article>
+        <article class="tradition">
+          <h4>21 &middot; Vaporwave</h4>
+          <p>Pink-cyan gradients, Japanese kana, Greco-Roman busts, VHS scanlines, rendered chrome.</p>
+          <p class="exemplars"><a href="https://poolsuite.net">Poolsuite FM</a>, <a href="https://vapor95.com">Vapor95</a></p>
+        </article>
+        <article class="tradition">
+          <h4>22 &middot; Skeuo-revival &#47; Web 1.0 ironic</h4>
+          <p>A wink at Windows 98 and the early web, rendered with 2025 polish. Chunky beveled buttons, folder icons, a guestbook section that actually exists.</p>
+          <p class="exemplars"><a href="https://are.na">Are.na</a>, <a href="https://cal.com">Cal</a>, <a href="https://hey.com">HEY</a></p>
+        </article>
+        <article class="tradition">
+          <h4>23 &middot; Cyberpunk &#47; tech-noir</h4>
+          <p>Terminal's mature cousin. Dark dense UI, neon magenta, cyan, lime. Panel-based layouts, glowing 1&nbsp;px strokes.</p>
+          <p class="exemplars"><a href="https://www.warp.dev">Warp</a>, <a href="https://www.raycast.com">Raycast</a>, <a href="https://ghostty.org">Ghostty</a></p>
+        </article>
+      </div>
+
+      <h3 class="group">Soft &amp; warm</h3>
+      <div class="tradition-grid">
+        <article class="tradition">
+          <h4>24 &middot; Cottagecore &#47; warm web</h4>
+          <p>Cream backgrounds, serif and hand-lettered headlines, warm-gray body, botanical illustration. No pure black anywhere.</p>
+          <p class="exemplars"><a href="https://www.themarginalian.org">The Marginalian</a>, <a href="https://saddlebackleather.com">Saddleback Leather</a></p>
+        </article>
+        <article class="tradition">
+          <h4>25 &middot; Editorial illustration</h4>
+          <p>Custom illustration as the primary visual system; a cast of recurring characters; type that lets the illustration lead.</p>
+          <p class="exemplars"><a href="https://www.intercom.com">Intercom</a>, <a href="https://www.headspace.com">Headspace</a>, <a href="https://www.dropbox.com">Dropbox</a></p>
+        </article>
+      </div>
+
+      <h3 class="group">Specialised</h3>
+      <div class="tradition-grid">
+        <article class="tradition">
+          <h4>26 &middot; Dataviz-native</h4>
+          <p>The chart is the hero. Text explains charts; layout is dictated by what the data needs. Step-scrolling narrative, brushing and linking, numbered figures.</p>
+          <p class="exemplars"><a href="https://pudding.cool">The Pudding</a>, <a href="https://ourworldindata.org">Our World in Data</a>, <a href="https://www.reuters.com/graphics/">Reuters Graphics</a></p>
+        </article>
+        <article class="tradition">
+          <h4>27 &middot; Generative &#47; algorithmic</h4>
+          <p>Computation as decoration. The site itself is a generative piece — canvas shaders, noise functions, particle systems, parameters you can tune.</p>
+          <p class="exemplars"><a href="https://tylerxhobbs.com">Tyler Hobbs</a>, <a href="https://mattdesl.com">Matt DesLauriers</a>, <a href="https://www.fxhash.xyz">fx(hash)</a></p>
+        </article>
+        <article class="tradition">
+          <h4>28 &middot; Glitched &#47; post-digital</h4>
+          <p>Intentional digital artifacts. RGB shift, datamosh, broken grids, UI refusing to cohere. Error as a design token.</p>
+          <p class="exemplars"><a href="https://beyondresolution.info">Rosa Menkman</a>, <a href="https://rhizome.org">Rhizome</a></p>
+        </article>
+        <article class="tradition">
+          <h4>29 &middot; Accessible &#47; inclusive-first</h4>
+          <p>Accessibility as a visual strategy, not a compliance layer. High contrast, large type, generous targets, motion-safe defaults.</p>
+          <p class="exemplars"><a href="https://www.gov.uk">GOV.UK</a>, <a href="https://inclusive-components.design">Inclusive Components</a>, <a href="https://www.a11yproject.com">A11y Project</a></p>
+        </article>
+        <article class="tradition">
+          <h4>30 &middot; Studio &#47; agency showcase</h4>
+          <p>Meta-performative. The site is a project in itself. Large type, reveal-on-scroll, fixed side navigation, cursor trails.</p>
+          <p class="exemplars"><a href="https://bureau.cool">Bureau Cool</a>, <a href="https://locomotive.ca">Locomotive</a>, <a href="https://activetheory.net">Active Theory</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="mixing" class="bay">
+    <div class="page">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;vi</span>
+        <span class="section-title">How traditions combine</span>
+      </div>
+      <p>The best sites rarely belong to one tradition. They braid two or three. Mixing without discipline, though, produces the design-by-Pinterest effect.</p>
+      <p>The rule that works: pick one tradition for <em>structure</em> (grid, rhythm, hierarchy) and a different tradition for <em>voice</em> (colour, type details, illustration). When both come from the same tradition the site looks like an impersonation. When both come from different traditions of the same <em>temperature</em> — both cold, or both warm, or both quiet, or both loud — you get composition. When temperatures clash, you get noise.</p>
+      <p>Pairs that work: Swiss structure + editorial voice (Stripe). Academic structure + dataviz voice (Distill). Document structure + hypertext voice (Gwern). Neo-brutalist structure + editorial illustration voice (Gumroad at its best). Terminal structure + editorial-serif voice reads as "for technical people who still read books" (Gwern again, Julia Evans).</p>
+      <p>Pairs that turn to noise: Awwwards motion + editorial reading (motion competes with the reading eye). Vaporwave + neo-brutalist (both loud, no register for balance). Cottagecore + cyberpunk (the emotional distance is too great). Skeuo-revival + Swiss (the irony of one undermines the seriousness of the other).</p>
+    </div>
+  </section>
+
+  <section id="exemplars" class="bay">
+    <div class="page">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;vii</span>
+        <span class="section-title">Exemplars for information and communication</span>
+      </div>
+      <p>A short list of sites worth studying closely, grouped by what they teach. Every entry rewards an hour spent clicking through carefully.</p>
+
+      <h3>Long-form reading</h3>
+      <ul class="refs">
+        <li><a href="https://craigmod.com">Craig Mod</a> &mdash; per-essay art direction; typography that feels printed.</li>
+        <li><a href="https://gwern.net">Gwern</a> &mdash; sidebar popups, hover previews, meticulous metadata. <a href="https://gwern.net/design">His design notes</a> are worth an evening.</li>
+        <li><a href="https://ciechanow.ski">Bartosz Ciechanowski</a> &mdash; single-column prose with drag-to-interact WebGL figures. The best interactive-explainer site on the web.</li>
+        <li><a href="https://press.stripe.com">Stripe Press</a> &mdash; bookmaking on the web. Per-title typesetting. Print-quiet scrolling.</li>
+      </ul>
+
+      <h3>Research and scholarship</h3>
+      <ul class="refs">
+        <li><a href="https://plato.stanford.edu">Stanford Encyclopedia of Philosophy</a> &mdash; no chrome, cross-referenced entries. A counter-argument to every "users need visual interest" claim.</li>
+        <li><a href="https://distill.pub">Distill</a> &mdash; interactive ML explanations. Figures that respond to the reader.</li>
+        <li><a href="https://notes.andymatuschak.org">Andy Matuschak's notes</a> &mdash; stretchtext, sliding-pane interface. The most successful note-structure experiment on the web.</li>
+        <li><a href="https://www.poetryfoundation.org">Poetry Foundation</a> &mdash; handling poems (where typography <em>is</em> the work) alongside essays.</li>
+      </ul>
+
+      <h3>Data-driven explanation</h3>
+      <ul class="refs">
+        <li><a href="https://pudding.cool">The Pudding</a> &mdash; essay-as-interactive; each piece invents its own visual language and still feels cohesive across the archive.</li>
+        <li><a href="https://ourworldindata.org">Our World in Data</a> &mdash; chart-driven essays at scale; every chart downloadable, embeddable, with a stable URL.</li>
+        <li><a href="https://www.bloomberg.com/graphics">Bloomberg Graphics</a> &mdash; chart craft discipline. Titles that function as conclusions.</li>
+        <li><a href="https://www.redblobgames.com">Red Blob Games</a> &mdash; interactive articles on pathfinding, hex grids, procedural generation. The diagrams are the teaching.</li>
+      </ul>
+
+      <h3>Documentation and reference</h3>
+      <ul class="refs">
+        <li><a href="https://docs.stripe.com">Stripe Docs</a> &mdash; three-column layout (nav, prose, code) with synchronised examples. Still the reference every docs team cites.</li>
+        <li><a href="https://developer.mozilla.org">MDN Web Docs</a> &mdash; gold standard for stable reference material since 2005.</li>
+        <li><a href="https://tailwindcss.com/docs">Tailwind Docs</a> &mdash; live-preview examples inline with prose. The interface itself is the best demo.</li>
+        <li><a href="https://doc.rust-lang.org/std/">Rust std</a> &mdash; generated from source, but the sidebar mirrors the module structure perfectly.</li>
+      </ul>
+
+      <h3>Institutional and archival</h3>
+      <ul class="refs">
+        <li><a href="https://www.cooperhewitt.org">Cooper Hewitt</a> &mdash; canonical museum-as-API collection site. Every object has a stable URL.</li>
+        <li><a href="https://www.rijksmuseum.nl/en/rijksstudio">Rijksstudio</a> &mdash; the best high-resolution zoomable artwork viewer on the web.</li>
+        <li><a href="https://publicdomainreview.org">The Public Domain Review</a> &mdash; every essay is an exhibition.</li>
+        <li><a href="https://archive.org">Internet Archive</a> &mdash; a deliberately dense, utilitarian interface. Studies well precisely because it resists prettification.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="map" class="bay">
+    <div class="page">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;viii</span>
+        <span class="section-title">Sites that map UI design itself</span>
+      </div>
+      <p>Yes — several sites have tried to systematise UI and UX design into a taxonomy, a pattern library, or a set of laws. The ones below are the canonical references to bookmark.</p>
+
+      <h3>Books &amp; principles</h3>
+      <ul class="refs">
+        <li><a href="https://www.refactoringui.com">Refactoring UI</a> &mdash; Adam Wathan &amp; Steve Schoger. The single best practical primer on interface craft. Paid; worth it.</li>
+        <li><a href="https://lawsofux.com">Laws of UX</a> &mdash; Jon Yablonski's distilled psychology (Fitts's, Hick's, Jakob's, Miller's, etc.) with visual illustrations.</li>
+        <li><a href="https://atomicdesign.bradfrost.com">Atomic Design</a> &mdash; Brad Frost's book (free online) on organising components from atoms to templates.</li>
+        <li><a href="https://every-layout.dev">Every Layout</a> &mdash; Heydon Pickering &amp; Andy Bell on primitive layout patterns (stack, cluster, sidebar, switcher) in modern CSS.</li>
+        <li><a href="https://inclusive-components.design">Inclusive Components</a> &mdash; Heydon Pickering's deep dives into accessible component patterns.</li>
+        <li><a href="https://principles.design">Principles.design</a> &mdash; an aggregated open archive of design principles from companies and designers.</li>
+      </ul>
+
+      <h3>Pattern catalogs</h3>
+      <ul class="refs">
+        <li><a href="https://ui-patterns.com">UI Patterns</a> &mdash; a long-running taxonomy of interface patterns (navigation, input, feedback, social).</li>
+        <li><a href="https://component.gallery">The Component Gallery</a> &mdash; every common component (accordion, autocomplete, carousel) shown across many design systems.</li>
+        <li><a href="https://designsystemsrepo.com">Design Systems Repo</a> &mdash; catalog of the design systems themselves; useful for seeing how large organisations structure their vocabularies.</li>
+        <li><a href="https://refero.design">Refero</a> &mdash; pattern-level search across fifty thousand real interfaces. Type "settings" or "empty state" and see dozens of real examples.</li>
+        <li><a href="https://mobbin.com">Mobbin</a> &mdash; the equivalent for mobile-app patterns, with full-flow screen captures.</li>
+        <li><a href="https://pageflows.com">Page Flows</a> &mdash; full user-flow recordings (sign-up, checkout, onboarding) across hundreds of products.</li>
+      </ul>
+
+      <h3>Platform systems &amp; heuristics</h3>
+      <ul class="refs">
+        <li><a href="https://m3.material.io">Material Design (M3)</a> &mdash; Google's design system, with exhaustive component, motion, and token documentation.</li>
+        <li><a href="https://developer.apple.com/design/human-interface-guidelines/">Apple Human Interface Guidelines</a> &mdash; the canonical Apple-platform reference.</li>
+        <li><a href="https://carbondesignsystem.com">Carbon</a> &mdash; IBM's open-source system; strong on motion taxonomy and accessibility.</li>
+        <li><a href="https://polaris.shopify.com">Polaris</a> &mdash; Shopify's system, notable for its content-guidance sections.</li>
+        <li><a href="https://www.nngroup.com">Nielsen Norman Group</a> &mdash; decades of empirical UX research; start with the <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Ten Usability Heuristics</a>.</li>
+      </ul>
+
+      <h3>Reference &amp; reading</h3>
+      <ul class="refs">
+        <li><a href="https://developer.mozilla.org">MDN</a> &mdash; the web platform reference. Stable URLs since 2005.</li>
+        <li><a href="https://css-tricks.com/almanac">CSS-Tricks Almanac</a> &mdash; property-by-property CSS reference.</li>
+        <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a> &mdash; long-form articles and books on design and development craft.</li>
+        <li><a href="https://alistapart.com">A List Apart</a> &mdash; the historical publication of record for web standards and design.</li>
+        <li><a href="https://uxdesign.cc">UX Collective</a> &mdash; contemporary essays on design practice.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="galleries" class="bay">
+    <div class="page">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;ix</span>
+        <span class="section-title">Sites that show examples</span>
+      </div>
+      <p>Also yes — a whole ecosystem of curated galleries. Each has a distinct editorial bias; a researcher building a personal reference should subscribe to three or four and let their tastes calibrate over time.</p>
+
+      <h3>The taste-led galleries</h3>
+      <ul class="refs">
+        <li><a href="https://minimal.gallery">Minimal Gallery</a> &mdash; restrained, type-led sites. The best single filter against visual noise.</li>
+        <li><a href="https://www.siteinspire.com">SiteInspire</a> &mdash; more editorial than Awwwards; skewed toward agency and portfolio work.</li>
+        <li><a href="https://godly.website">Godly</a> &mdash; over a thousand hand-picked sites, heavy on motion and experimental work. Filters by industry and category.</li>
+        <li><a href="https://www.typewolf.com">Typewolf</a> &mdash; typography-focused; every entry lists the typefaces used. Irreplaceable for studying pairings.</li>
+        <li><a href="https://httpster.net">Httpster</a> &mdash; long-running, taste-driven; the older archive is worth mining.</li>
+        <li><a href="https://bestwebsite.gallery">Best Website Gallery</a> &mdash; David Hellmann's curation.</li>
+      </ul>
+
+      <h3>The industry archives</h3>
+      <ul class="refs">
+        <li><a href="https://www.awwwards.com">Awwwards</a> &mdash; the biggest; daily Sites of the Day. Filter with skepticism; studios skew toward motion-showmanship. Useful for seeing the current frontier.</li>
+        <li><a href="https://www.cssdesignawards.com">CSS Design Awards</a> &mdash; sister archive, more developer-oriented.</li>
+        <li><a href="https://thefwa.com">FWA</a> &mdash; long-running, strong history of experimental work.</li>
+        <li><a href="https://www.webbyawards.com/winners/">Webby Winners</a> &mdash; broader and more mainstream; useful as a ground truth of what "mainstream good" looks like year over year.</li>
+      </ul>
+
+      <h3>By type or purpose</h3>
+      <ul class="refs">
+        <li><a href="https://land-book.com">Land-book</a> &mdash; landing and marketing pages, heavy SaaS bias.</li>
+        <li><a href="https://www.lapa.ninja">Lapa Ninja</a> &mdash; landing-page focused; good for form patterns.</li>
+        <li><a href="https://onepagelove.com">One Page Love</a> &mdash; single-page designs.</li>
+        <li><a href="https://mobbin.com">Mobbin</a> &mdash; mobile app patterns, searchable by flow.</li>
+        <li><a href="https://fontsinuse.com">Fonts In Use</a> &mdash; not web-specific but the best corpus of typography in the wild; searchable by face, designer, industry.</li>
+      </ul>
+
+      <h3>Historical &amp; critical</h3>
+      <ul class="refs">
+        <li><a href="https://www.webdesignmuseum.org">Web Design Museum</a> &mdash; historical archive back to 1991.</li>
+        <li><a href="https://www.underconsideration.com/brandnew">Brand New</a> &mdash; brand identity reviews; sharp written critique accompanies every post.</li>
+        <li><a href="https://are.na">Are.na</a> &mdash; not a gallery per se, but the "Web Design" channels there are among the richest research collections online. Follow a few curators whose taste you trust.</li>
+      </ul>
+
+      <p class="aside">A practical suggestion. Any time you admire a site on one of these galleries, look up its typefaces on Typewolf, and open its "view source" to see how the HTML is structured. Patterns emerge quickly. Separate what's genuinely new from what's aesthetic-of-the-moment; motion is what gets awards, but structure is what makes a site usable at scale.</p>
+    </div>
+  </section>
+
+  <section id="practitioners" class="bay">
+    <div class="page">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;x</span>
+        <span class="section-title">Practitioners worth following</span>
+      </div>
+      <p>Writers and makers whose output will level your eye faster than more site-browsing will. A short list, weighted toward those who publish regularly and in public.</p>
+      <ul class="refs">
+        <li><a href="https://www.joshwcomeau.com">Josh Comeau</a> &mdash; the best blog for concrete CSS craft. His shadow, radius, and transitions essays are each worth an hour.</li>
+        <li><a href="https://practicaltypography.com">Matthew Butterick</a> &mdash; <em>Practical Typography</em>, free online, the rulebook for web type.</li>
+        <li><a href="https://labs.jensimmons.com">Jen Simmons</a> &mdash; modern CSS layout and intrinsic-web-design thinking.</li>
+        <li><a href="https://www.robinrendle.com">Robin Rendle</a> &mdash; essays on web typography and craft.</li>
+        <li><a href="https://ishadeed.com">Ahmad Shadeed</a> &mdash; modern CSS and visual detail writing.</li>
+        <li><a href="https://inclusive-components.design">Heydon Pickering</a> &mdash; accessibility as a craft discipline.</li>
+        <li><a href="https://www.subtraction.com">Khoi Vinh</a> &mdash; grid systems and editorial thinking.</li>
+        <li><a href="https://rauno.me">Rauno Freiberg</a> &mdash; interaction craft from inside Vercel.</li>
+        <li><a href="https://www.refactoringui.com">Adam Wathan &amp; Steve Schoger</a> &mdash; <em>Refactoring UI</em>, still the best single practical book.</li>
+      </ul>
+      <p>Five books worth owning: <em>Refactoring UI</em>, <em>Practical Typography</em>, <em>Thinking with Type</em> (Ellen Lupton), <em>The Elements of Typographic Style</em> (Robert Bringhurst), <em>Grid Systems in Graphic Design</em> (Josef Müller-Brockmann).</p>
+    </div>
+  </section>
+
+  <section id="close" class="bay final">
+    <div class="page">
+      <div class="section-mark">
+        <span class="section-num">§&nbsp;xi</span>
+        <span class="section-title">One-paragraph synthesis</span>
+      </div>
+      <p class="synthesis">The sites you admire almost all do the same thing. They choose a single structural tradition (Swiss grid, editorial magazine, Tufte document), commit to one or two <em>quiet</em> dimensions (warm neutrals, a measured type scale, an eight-point spacing grid), and push expressively on exactly one or two <em>loud</em> dimensions (a distinctive typeface, a custom illustration system, a motion signature) — and nothing else. The sites that look vibe-coded push randomly on whatever the framework defaults happen to push on: gradient hero, rounded cards, Inter everywhere, cool gray neutrals, three feature columns. The difference is not budget or talent — it is that every value was chosen against an alternative the designer considered and rejected. For an information-dense research site specifically, the document, academic, and editorial lineage (Gwern, Ciechanowski, Stripe Press, Distill, Tufte CSS) is the right register: warm cream backgrounds, one serif at about eighteen pixels with 1.6 line-height, a single red or rust accent for links only, numbered figures, no aurora gradients anywhere. If you are writing for decades rather than for a product launch, restraint is the style — and your voice will emerge from the restraint rather than fight it.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="colophon">
+  <div class="page">
+    <div class="rule-wide"></div>
+    <p class="colophon-body">Set in <strong>Source Serif 4</strong> by Frank Grießhammer, with <strong>JetBrains Mono</strong> for the chrome. Paper <code>#FBF8F1</code>, ink <code>#1C1712</code>, a single accent at <code>#A62B1F</code> reserved for links. Measure at 65&nbsp;ch. Grain at three per cent opacity. No gradients, no glowing blobs, no <code>rounded-2xl</code>.</p>
+    <p class="footer-meta">April 2026 &nbsp;·&nbsp; Ways of Thinking &nbsp;·&nbsp; Compiled for Douglas McGowan, UC Berkeley</p>
+  </div>
+</footer>
+
+</body>
+</html>
